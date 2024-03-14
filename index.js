@@ -10,6 +10,7 @@ const PORT_URL = process.env.PORT || 3005;
 
 app.listen(PORT_URL, () => {
     console.log(`server runing on port ${PORT_URL}`);
+    mongo_connect();
 });
 
 const mongo_connect = () => {
